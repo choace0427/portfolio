@@ -1,0 +1,480 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300|Montserrat:800);
+
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    background: white;
+    color: black;
+    font-family: 'Josefin Sans';
+    font-weight: 300;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.live-update:hover {
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.dots-div {
+    position: fixed;
+    bottom: calc(1% + 100px);
+    right: 34px;
+    z-index: 999;
+}
+
+.scroll_item {
+    border: 3px solid #000;
+    width: 12px;
+    height: 12px;
+    margin: 6px;
+    cursor: pointer;
+}
+
+.scroll_item:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.scroll_item_active {
+    border: 3px solid #000;
+    width: 12px;
+    height: 12px;
+    margin: 6px;
+    background-color: #000;
+}
+
+.footer .contact-icon {
+    height: 1.8em;
+    width: 1.8em;
+}
+
+.footer .contact-icon:hover {
+    position: relative;
+    top: -5px;
+}
+
+.section-center {
+    text-align: center;
+    font-size: 1.4em;
+    overflow-x: hidden;
+    align-items: center;
+}
+
+.section-center .photo-container {
+    display: inline-block;
+    object-fit: scale-down;
+    margin: 15px;
+    vertical-align: bottom;
+    width: 40%;
+    overflow: hidden;
+}
+
+.section-center .standalone-image {
+    margin-top: 1em;
+    width: 30%;
+    border-radius: 0.5em;
+}
+
+.section-center .text-cutoff {
+    width: 55%;
+    font-size: 0.8em;
+    margin-left: 22.5%;
+}
+
+.section-center .projects-div {
+    margin-top: 3.5%;
+    margin-bottom: 3.5%;
+    width: 70%;
+    display: inline-block;
+}
+
+.section-center .projects-div .project-card {
+    width: 28%;
+    padding: 1%;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.section-center .projects-div .project-card .project-img-div {
+    width: 90%;
+    height: auto;
+    padding: 2%;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.section-center .projects-div .project-card .project-img-div .project-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: inline-block;
+    background-color: white;
+}
+
+.section-center .projects-div .project-card .project-img-div .project-links,
+.project-title {
+    width: 100%;
+    font-size: 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+
+.project-img {
+  max-width: clamp(50px, 8vw, 200px);
+}
+
+@media(max-width: 850px) {
+    .dots-div {
+        display: none;
+    }
+
+    .section-center .text-cutoff {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .section-center .standalone-image {
+        margin-top: 30px;
+        width: 90%;
+        border-radius: 0.5em;
+    }
+
+    .section-center .photo-container {
+        width: 90%;
+    }
+
+    .section-center .experience-subtext {
+        margin-bottom: 0.5em;
+    }
+
+    .margin-top {
+        margin-top: 5em;
+    }
+
+    .section-center .projects-div {
+        width: 95%;
+    }
+
+    .section-center .projects-div .project-card {
+        width: 75%;
+        padding: 5%;
+        display: inline-block;
+        overflow: hidden;
+    }
+}
+
+.project-title {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.section-center iframe {
+    height: 90%;
+    width: 90%;
+}
+
+.section-center .experience-photo-large {
+    height: 5em;
+    object-fit: scale-down;
+    max-width: 90%;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 0.5em;
+}
+
+.section-center .experience-photo-small {
+    height: 4em;
+    max-width: 60%;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 0.5em;
+}
+
+.section-center .experience-subtext {
+    margin-bottom: 2em;
+}
+
+.headshot, .headshot-pixel {
+    height: 9em;
+    border-radius: 4.5em;
+}
+.headshot.larger, .headshot-pixel.larger {
+    height: 11em;
+    border-radius: 5.5em;
+    backdrop-filter: blur(10px);
+    /* Add alpha channel to hex color (browser support: https://caniuse.com/css-rrggbbaa) */
+    background-color: #ffffff40;
+}
+
+.painting {
+  height: 11em;
+  border-radius: 0.5em;
+}
+
+.intro-about-container {
+    margin-top: 20vh;
+}
+.intro-about-btn {
+    margin-top: 2em!important;
+    margin-bottom: 2em!important;
+}
+
+.section-center a {
+    color: #7f7fbf;
+    text-decoration: none;
+}
+
+.section-center a:hover {
+    color: #e5e5f2;
+    position: relative;
+    top: -2px;
+}
+
+.sidebar li {
+    padding: 0px;
+    padding-bottom: 3px;
+    margin: 0px;
+}
+
+.sidebar li::before {
+    content: "\00BB";
+}
+
+.sidebar li:hover {
+    color: grey;
+}
+
+.box {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.box .row {}
+
+.box .row.header {
+    flex: 0 1 auto;
+    /* The above is shorthand for:
+  flex-grow: 0,
+  flex-shrink: 1,
+  flex-basis: auto
+  */
+}
+
+.box .row.content {
+    flex: 1 1 auto;
+    margin: 15px;
+    position: relative;
+    background-color: white;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: white;
+    background-image: url('../white.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+}
+
+.fading {
+    -webkit-transition: background-image 1s ease-in;
+    -moz-transition: background-image 1s ease-in;
+    -ms-transition: background-image 1s ease-in;
+    -o-transition: background-image 1s ease-in;
+    transition: background-image 1s ease-in;
+}
+
+.box .row.footer {
+    text-align: center;
+    flex: 0 1 auto;
+    margin: 7px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.intro-animation {
+    text-align: left;
+    font-size: 3em;
+}
+
+.title {
+    background-color: black;
+    font-size: 6vw;
+    line-height: 0.65em;
+    overflow: hidden;
+    color: white;
+    padding-top: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.title-text {
+    float: right;
+    display: inline-block;
+    padding-top: 0.4em;
+    text-align: right;
+    padding-right: 0.2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+.title-animation {
+    float: left;
+    padding: 0;
+    overflow: hidden;
+}
+
+.svg-animation {
+    height: 1.05em;
+    display: inline-block;
+    position: absolute;
+}
+
+.margin-top {
+    margin-top: 25vh;
+}
+
+.move-to-top {
+    position: relative;
+    top: 0px;
+    right: 0px;
+}
+
+.svg-wrapper {
+    height: 60px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    width: 320px;
+    text-align: center;
+}
+
+#mustache {
+    height: 4em;
+    width: 30%;
+    margin-left: -26.5%;
+    display: inline-block;
+    padding-bottom: 2.9em;
+}
+
+.svg-img {
+    width: 100%;
+    height: 100%;
+}
+
+.shape {
+    height: 100%;
+    width: 100%;
+    fill: black;
+    stroke-width: 0px;
+    stroke: black;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.text {
+    color: white;
+    font-size: 28px;
+    line-height: 32px;
+    position: relative;
+    top: -48px;
+    cursor: pointer;
+}
+
+.inner-body {
+    margin: 15px;
+}
+
+.media-link {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 0.35em;
+    height: 0.35em;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #181818;
+    outline: 1px solid #181818;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #181818;
+}
+
+@keyframes draw {
+    0% {
+        stroke: black;
+        stroke-dasharray: 140 540;
+        stroke-dashoffset: -474;
+        stroke-width: 0px;
+    }
+
+    100% {
+        stroke: black;
+        stroke-dasharray: 760 0;
+        stroke-dashoffset: 0;
+        stroke-width: 5px;
+    }
+}
+
+.svg-wrapper:hover .shape {
+    -webkit-animation: 0.38s draw linear forwards;
+    -moz-animation: 0.38s draw linear forwards;
+    -ms-animation: 0.38s draw linear forwards;
+    -o-animation: 0.38s draw linear forwards;
+    animation: 0.38s draw linear forwards;
+    fill: white;
+}
+
+.svg-wrapper:hover .text {
+    color: black;
+}
+
+/* For IE, Edge, FireFox */
+.svg-wrapper:hover .shape.altbrowser {
+    background-color: white;
+}
+
+.svg-wrapper:hover .text.altbrowser {
+    color: black;
+    background-color: white;
+}
+
+.shape.altbrowser {
+    background-color: black;
+}
+
+.text.altbrowser {
+    background-color: black;
+    border: 4px solid black;
+    padding: 7px;
+}
+
+i {
+    color: rgba(0, 0, 0, 0.6);
+}
